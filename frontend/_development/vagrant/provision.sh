@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#echo 'Acquire::http::Proxy "http://creanas:9999";' > /etc/apt/apt.conf.d/01proxy
+echo 'Acquire::http::Proxy "http://creanas:9999";' > /etc/apt/apt.conf.d/01proxy
 
 apt-get update
 apt-get -y upgrade
