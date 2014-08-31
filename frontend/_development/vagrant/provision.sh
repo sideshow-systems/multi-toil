@@ -19,9 +19,9 @@ apt-get install -y mysql-server apache2 php5 libapache2-mod-php5 php5-mysql
 # virtual host for yii framework
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
-  DocumentRoot "/vagrant/yii"
+  DocumentRoot "/vagrant/yii/webapp"
   ServerName localhost
-  <Directory "/vagrant/yii">
+  <Directory "/vagrant/yii/webapp">
     AllowOverride All
   </Directory>
 </VirtualHost>
